@@ -1,0 +1,35 @@
+<nav class="navbar">
+  <a routerLink="/" class="logo">
+    <div class="logo-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <rect x="2" y="9" width="20" height="9" rx="2" fill="#CC2222"/>
+        <path d="M5 9 L7 5 H17 L19 9" fill="#CC2222"/>
+        <circle cx="7" cy="18" r="2.5" fill="white" stroke="#CC2222" stroke-width="1.5"/>
+        <circle cx="17" cy="18" r="2.5" fill="white" stroke="#CC2222" stroke-width="1.5"/>
+      </svg>
+    </div>
+    <span class="logo-text">Autos <span>Miller's</span></span>
+  </a>
+  <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a routerLink="/inicio">Inicio</a></li>
+    <li><a routerLink="/carros">Carros</a></li>
+    <li><a routerLink="/motos">Motos</a></li>
+    <li><a routerLink="/servicios">Servicios</a></li>
+    <li><a routerLink="/contactanos">Contáctanos</a></li>
+    <li class="mobile-actions">
+      <button class="btn-login" routerLink="/login">Iniciar sesión</button>
+      <a class="btn-whatsapp" href="https://wa.me/573132288979" target="_blank">WhatsApp</a>
+    </li>
+  </ul>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <div class="right-actions">
+    <button class="btn-login" routerLink="/login">Iniciar sesión</button>
+    <a class="btn-whatsapp" href="https://wa.me/573132288979" target="_blank">WhatsApp</a>
+  </div>
+</nav>

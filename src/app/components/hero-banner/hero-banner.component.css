@@ -1,0 +1,115 @@
+.containerhero {
+    display: flex;
+    flex-direction: row;          
+    min-height: 400px;
+    background-color: rgb(195, 0, 0);
+    color: white;
+}
+
+.hero-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.encabezado {
+    padding: 15px;
+    width: 100%;
+}
+
+.llamativo {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.408);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 8px;
+    margin: 0;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+.subtitle {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    opacity: 0.85;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-logo {
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+    box-shadow: 0 8px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.img-logo:hover {
+    transform: scale(1.1) rotate(3deg);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 768px) {
+    .containerhero {
+        flex-direction: column;       
+        min-height: auto;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .hero-text {
+        order: 2;                     
+        align-items: center;
+    }
+
+    .hero-image {
+        order: 1;                    
+    }
+
+    .img-logo {
+        width: 55%;
+        max-width: 280px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .containerhero {
+        padding: 20px 15px;
+    }
+
+    .img-logo {
+        width: 70%;
+        max-width: 220px;
+    }
+
+    .title {
+        font-size: 19px;
+    }
+
+    .llamativo {
+        font-size: 13px;
+    }
+}
