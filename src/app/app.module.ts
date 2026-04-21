@@ -9,6 +9,10 @@ import { HeroBannerComponent } from './components/hero-banner/hero-banner.compon
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { VehicleCardComponent } from './components/vehicle-card/vehicle-card.component';
 import { VehicleListComponent } from './components/vehicle-list/vehicle-list.component';
+import { TestimoniosComponent } from './components/testimonios/testimonios.component';
+import { ServiciosComponent } from './components/servicios/servicios.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { VehicleListComponent } from './components/vehicle-list/vehicle-list.com
     HeroBannerComponent,
     SearchBarComponent,
     VehicleCardComponent,
-    VehicleListComponent
+    VehicleListComponent,
+    ServiciosComponent,
+    TestimoniosComponent,
+    ContactoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

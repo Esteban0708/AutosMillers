@@ -1,0 +1,17 @@
+<section class="servicios">
+  <div class="section-header">
+    <span class="section-label">¿Qué ofrecemos?</span>
+    <h2 class="section-title">Nuestros <span>servicios</span></h2>
+    <p class="section-sub">
+      Todo lo que necesitas para encontrar y adquirir tu vehículo ideal en un solo lugar.
+    </p>
+  </div>
+
+  <div class="servicios-grid">
+    <div class="servicio-card" *ngFor="let s of servicios">
+      <div class="servicio-icon" [innerHTML]="s.svg"></div>
+      <div class="servicio-titulo">{{ s.titulo }}</div>
+      <div class="servicio-desc">{{ s.desc }}</div>
+    </div>
+  </div>
+</section>

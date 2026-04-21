@@ -1,0 +1,135 @@
+.servicios {
+  padding: 5rem 1.5rem;
+  background: #ffffff;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ef4444;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.section-title span {
+  color: #ef4444;
+}
+
+.section-sub {
+  font-size: 15px;
+  color: #888888;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servicio-card {
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  background: #fafafa;
+  border: 1.5px solid #f0f0f0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  cursor: default;
+}
+
+.servicio-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(239, 68, 68, 0.10);
+  border-color: #ef4444;
+}
+
+.servicio-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  background: #fff0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+
+.servicio-icon img {
+  width: 26px;
+  height: 26px;
+}
+
+.servicio-titulo {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.servicio-desc {
+  font-size: 13px;
+  color: #888888;
+  line-height: 1.6;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 1024px) {
+  .servicios-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .servicios {
+    padding: 3.5rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .servicios-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .servicios-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .servicio-card {
+    padding: 1.2rem 1rem;
+  }
+
+  .servicio-titulo {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .servicios-grid {
+    grid-template-columns: 1fr;
+  }
+}
